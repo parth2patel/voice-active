@@ -83,14 +83,6 @@ def run_alexa():
 
 
 @app.route('/')
-def hello():
-    return render_template("index.html")
-
-@app.route("/home")
-def home():
-    return redirect('/')
-
-@app.route('/voice-active/')
 def submit():
     while True:
         try:
