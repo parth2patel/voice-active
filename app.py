@@ -84,7 +84,7 @@ def run_alexa():
 
 @app.route('/')
 def hello():
-    return render_template("alexa.html")
+    return render_template("index.html")
 
 @app.route("/home")
 def home():
@@ -98,7 +98,7 @@ def submit():
         except UnboundLocalError:
             print("No command detected! Alexa has stopped working")
             talk('No command detected! Alexa has stopped working')
-            return render_template("alexa.html",key=sentence)
+            return render_template("index.html")
             break
     
 
